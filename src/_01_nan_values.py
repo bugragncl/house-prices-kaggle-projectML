@@ -1,6 +1,9 @@
+"""
 import pandas as pd
 import matplotlib.pyplot as plt
+"""
 
+"""
 df = pd.read_csv("../data/raw/train.csv")
 df.info()
 
@@ -20,6 +23,7 @@ for col in df.select_dtypes(include=["int64", "float64"]).columns:
     plt.ylabel("SalePrice")
     plt.grid()
     plt.show()
+"""
 
 
 def fill_nan_values(df):
@@ -37,6 +41,7 @@ def fill_nan_values(df):
     return df
 
 
+"""
 df = fill_nan_values(df)
 df.info()
 
@@ -50,3 +55,4 @@ for col in df.select_dtypes(include=["int64", "float64"]).columns:
     plt.show()
 
 df.to_pickle("../data/processed/01_no_nan.pkl")
+"""
